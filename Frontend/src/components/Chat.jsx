@@ -115,7 +115,7 @@ export const Chat = ({ socket, username, room, connectedUser, goBackToHome }) =>
                   )}
                 </div>
                 <div className="msg_detail text-sm text-gray-400">
-                  <p>{data.author}</p>
+                  {/* <p>{data.author}</p> */}
                   <p>{data.time}</p>
                 </div>
               </div>

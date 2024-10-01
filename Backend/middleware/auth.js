@@ -6,7 +6,7 @@ import { User } from '../models/User.js';
 dotenv.config();
 
 export const auth =async (req,res,next)=>{
-    const token =req.header("Auth");
+    const token =req.cookies["Auth"];
 
     if(!token)
         return res.json({message:"Login First"});

@@ -4,6 +4,7 @@ import { dbConnect } from './config/database.js';
 import userRouter from './routes/user.js'
 import cors from 'cors'
 
+
 import http from 'http'; // For creating the server
 import { initializeSocket } from './controller/chatController.js'; // Import Socket.IO controller
 

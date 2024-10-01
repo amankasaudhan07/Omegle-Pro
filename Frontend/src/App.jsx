@@ -8,6 +8,10 @@ import About from './components/About.jsx'
 import Support from './components/Support.jsx'
 import NewChat from './components/NewChat.jsx'
 import { Chat } from './components/Chat.jsx'
+import Faq from './components/Faq.jsx'
+import Contact from './components/Contact.jsx'
+import ReportIssue from './components/ReportIssue.jsx'
+import Footer from './components/Footer.jsx'
 
 
 function App() {
@@ -24,10 +28,11 @@ function App() {
             <Route path='/about' element={<About/>}/>
             <Route path='/support' element={<Support/>}/>
             <Route path='/newChat' element={<NewChat/>}/>
-           
-            
-            
+            <Route path='/faq' element={<Faq/>}/>
+            <Route path='/contact' element={<Contact/>}/>
+            <Route path='/report-issue' element={<ReportIssue/>}/>
          </Routes>
+         <Footer/>
       </Router>
       
     </>
