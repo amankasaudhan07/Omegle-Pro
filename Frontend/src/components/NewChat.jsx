@@ -5,7 +5,7 @@ import music from './mixkit-tile-game-reveal-960.wav';
 import { useNavigate } from 'react-router-dom';
 
 // Replace with the correct URL where your server is running
-const socket = io.connect("http://localhost:5000");
+const socket = io.connect("https://omegle-pro.onrender.com");
 
 const NewChat = () => {
   const [username, setUsername] = useState("");

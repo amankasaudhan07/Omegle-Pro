@@ -4,7 +4,8 @@ import axios from 'axios'
 
 
 const AppState = (props) => {
-    const url = "http://localhost:5000/api" 
+    // const url = "http://localhost:5000/api" 
+    const url = "https://omegle-pro.onrender.com" 
    
      const [authenticated,setauthenticated]=useState(false);
      const [token,setToken]=useState('');
@@ -18,7 +19,7 @@ const AppState = (props) => {
      const register = async (fullname,username,password) => {
         
         try{
-            const api = await axios.post(`${url}/user/register`,{fullname,username,password},{
+            const api = await axios.post(`${url}/api/user/register`,{fullname,username,password},{
                 headers:{
                     "Content-Type":"Application/json",
                 },
@@ -34,7 +35,7 @@ const AppState = (props) => {
 
     // login user
     const login = async (username,password) => {
-        const api = await axios.post(`${url}/user/login`,{username,password},{
+        const api = await axios.post(`${url}/api/user/login`,{username,password},{
             headers:{
                 "Content-Type":"Application/json",
             },
@@ -51,7 +52,7 @@ const AppState = (props) => {
 
     //logout
     const logout = async ()=>{
-        const api = await axios.get(`${url}/user/logout`,{
+        const api = await axios.get(`${url}/api/user/logout`,{
             headers:{
                 "Content-Type":"Application/json",
             },
