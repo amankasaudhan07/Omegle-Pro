@@ -8,7 +8,8 @@ const ReportIssue = () => {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    // e.preventDefault();
+    alert('Your Issue is reported')
     // Handle issue submission logic (e.g., send report to the backend)
     console.log('Issue reported:', form);
   };

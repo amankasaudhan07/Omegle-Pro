@@ -8,7 +8,8 @@ const Contact = () => {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    // e.preventDefault();
+    alert('We will try to contact u soon :)')
     // Handle form submission logic (e.g., send email or store in database)
     console.log('Form submitted:', form);
   };
