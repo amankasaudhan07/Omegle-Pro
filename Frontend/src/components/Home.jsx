@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import Img from '../assets/img3.jpg';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -26,9 +27,9 @@ const Home = () => {
       {/* Right Section */}
       <div className="md:w-1/2">
         <img 
-          src="https://www.chitchat.gg/_astro/features-03-image-03.DvTmJlRy_1U4Q07.webp" 
+          src={Img} 
           alt="Talk to strangers" 
-          className="w-full h-auto rounded-lg shadow-lg"
+          className="w-3/4 h-1/6 rounded-lg shadow-lg ml-20"
         />
       </div>
     </div>
