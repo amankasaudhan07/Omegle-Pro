@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import AppContext from '../context/AppContext';
 import { Link, useNavigate } from 'react-router-dom';
-import logo from '../assets/logo.jpg';
+import logo from '../assets/logo-color.png';
 
 
 const Navbar = () => {
@@ -26,7 +26,7 @@ const Navbar = () => {
             <img
               src={logo}
               alt="Logo"
-              className="h-10 w-auto rounded-full" // Adjust the height as needed
+              className="h-48 w-auto rounded-full" // Adjust the height as needed
             />
           </div>
           {/* Center: Menu */}
